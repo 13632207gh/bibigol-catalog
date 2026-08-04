@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#123e2c">
+  <meta name="description" content="کاتالوگ دیجیتال گیاهان هدیه BiBiGol">
+  <title>BiBiGol | کاتالوگ دیجیتال</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#home">
+    <svg viewBox="0 0 100 100" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 60C30 38 31 20 50 8c19 12 20 30 0 52Z"/>
+        <path d="M50 60C72 43 90 47 96 67c-19 10-35 7-46-7Z"/>
+        <path d="M50 60C28 45 10 48 4 68c18 9 34 6 46-8Z"/>
+        <path d="M50 60v32"/>
+      </g>
+    </svg>
+    <div><b>BiBiGol</b><small>گیاهان زیبا، هدیه‌ای ماندگار</small></div>
+  </a>
+
+  <nav>
+    <a href="#home">خانه</a>
+    <button type="button" data-open>کاتالوگ</button>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+
+  <a class="top-download" href="catalog.pdf" download>دانلود PDF</a>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <span class="tag">کاتالوگ دیجیتال BiBiGol</span>
+      <h1>هنوز هدیه خاصت را پیدا نکردی؟</h1>
+      <p>هدیه‌ای ماندگار، شیک و متفاوت برای هر مناسبت؛ مجموعه‌ای از گیاهان آپارتمانی با بسته‌بندی خاص BiBiGol.</p>
+      <div class="actions">
+        <button class="btn primary" type="button" data-open>مشاهده کاتالوگ</button>
+        <a class="btn secondary" href="catalog.pdf" download>دانلود نسخه PDF</a>
+      </div>
+      <div class="features">
+        <article><span>✓</span><b>انتخاب متفاوت</b><small>مناسب هدیه و دکوراسیون</small></article>
+        <article><span>☎</span><b>مشاوره خرید</b><small>برای انتخاب بهترین گزینه</small></article>
+        <article><span>🎁</span><b>بسته‌بندی خاص</b><small>آماده هدیه دادن</small></article>
+      </div>
+    </div>
+    <div class="hero-art"><img src="assets/hero.jpg" alt="جلد کاتالوگ BiBiGol"></div>
+  </section>
+
+  <section class="catalog-band">
+    <div class="catalog-text">
+      <span>نسخه کامل</span>
+      <h2>کاتالوگ را آنلاین ورق بزنید</h2>
+      <p>جلد، تصاویر محصولات، توضیحات، ویژگی‌ها و راهنمای نگهداری همه محصولات در نسخه کامل قرار گرفته‌اند.</p>
+      <button class="btn light" type="button" data-open>باز کردن Flipbook</button>
+    </div>
+    <div class="preview">
+      <img src="assets/catalog/09-08.jpg" alt="پیش نمایش آگلونما">
+      <img src="assets/catalog/12-back.jpg" alt="پشت جلد">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div>
+      <span class="tag tag-light">تماس و سفارش</span>
+      <h2>برای مشاوره با ما در ارتباط باشید</h2>
+      <p>برای انتخاب محصول، دریافت اطلاعات بیشتر یا ثبت سفارش با BiBiGol تماس بگیرید.</p>
+      <div class="actions">
+        <a class="btn whatsapp" href="https://wa.me/989054188011" target="_blank" rel="noopener">واتساپ</a>
+        <a class="btn ghost" href="tel:+989054188011">۰۹۰۵۴۱۸۸۰۱۱</a>
+      </div>
+    </div>
+    <div class="contact-card">
+      <div><span>📍</span><p><b>آدرس</b><br>کرج، چهارباغ</p></div>
+      <div><span>☎️</span><p><b>شماره تماس</b><br><a href="tel:+989054188011">۰۹۰۵۴۱۸۸۰۱۱</a></p></div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 BiBiGol - تمامی حقوق محفوظ است.</footer>
+
+<div class="viewer" id="viewer" aria-hidden="true">
+  <div class="viewer-top">
+    <b>BiBiGol</b>
+    <div>
+      <a href="catalog.pdf" download>دانلود PDF</a>
+      <button id="fullscreen" type="button">تمام‌صفحه</button>
+      <button id="close" type="button" class="close">×</button>
+    </div>
+  </div>
+
+  <div class="viewer-main">
+    <button class="arrow" id="prev" type="button" aria-label="قبلی">›</button>
+    <div class="stage" id="stage"></div>
+    <button class="arrow" id="next" type="button" aria-label="بعدی">‹</button>
+  </div>
+
+  <div class="viewer-bottom">
+    <span id="counter">۱ از ۱۲</span>
+    <input id="slider" type="range" min="1" max="12" value="1">
+  </div>
+</div>
+
+<script>window.CATALOG_ITEMS = [{"src": "assets/catalog/01-cover.jpg", "title": "جلد کاتالوگ", "portrait": true}, {"src": "assets/catalog/02-01.jpg", "title": "گل قاشقی", "portrait": false}, {"src": "assets/catalog/03-02.jpg", "title": "دیفن کاملیا", "portrait": false}, {"src": "assets/catalog/04-03.jpg", "title": "هومالومنا", "portrait": false}, {"src": "assets/catalog/05-04.jpg", "title": "ساکولنت", "portrait": false}, {"src": "assets/catalog/06-05.jpg", "title": "آنتوریوم", "portrait": false}, {"src": "assets/catalog/07-06.jpg", "title": "گل‌های جاودان", "portrait": false}, {"src": "assets/catalog/08-07.jpg", "title": "اسپاتی فیلوم ابلق", "portrait": false}, {"src": "assets/catalog/09-08.jpg", "title": "آگلونما برفی", "portrait": false}, {"src": "assets/catalog/10-09.jpg", "title": "فیلودندرون برکین", "portrait": false}, {"src": "assets/catalog/11-10.jpg", "title": "تراریوم", "portrait": false}, {"src": "assets/catalog/12-back.jpg", "title": "پشت جلد", "portrait": true}];</script>
+<script src="app.js"></script>
+</body>
+</html>
