@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120">
-<g fill="none" stroke="#194d35" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-<path d="M55 75C38 55 38 35 55 20c17 15 17 35 0 55Z"/>
-<path d="M55 75C76 58 92 60 101 78c-18 9-34 6-46-3Z"/>
-<path d="M55 75C35 60 18 62 10 80c18 8 33 5 45-5Z"/>
-<path d="M55 75v24"/>
-</g>
-<text x="125" y="79" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-style="italic" fill="#194d35">BiBiGol</text>
-</svg>
