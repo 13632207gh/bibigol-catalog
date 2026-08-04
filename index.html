@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#194d35">
+  <meta name="description" content="کاتالوگ دیجیتال گیاهان آپارتمانی BiBiGol">
+  <title>BiBiGol | کاتالوگ دیجیتال</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <img src="assets/logo.svg" class="brand" alt="BiBiGol">
+    <a class="phone-link" href="tel:+989054188011">تماس: ۰۹۰۵۴۱۸۸۰۱۱</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">کاتالوگ دیجیتال BiBiGol</span>
+        <h1>گیاهان زیبا، هدیه‌ای ماندگار</h1>
+        <p>مجموعه‌ای از گیاهان آپارتمانی با بسته‌بندی هدیه، مناسب خانه و محل کار.</p>
+        <div class="actions">
+          <button class="primary" data-open-catalog>مشاهده کاتالوگ</button>
+          <a class="secondary" href="catalog.pdf" download>دانلود PDF</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/hero.jpg" alt="گیاه آپارتمانی BiBiGol">
+      </div>
+    </section>
+
+    <section class="info-grid">
+      <article><span>📍</span><h2>آدرس</h2><p>کرج، چهارباغ</p></article>
+      <article><span>☎️</span><h2>سفارش و مشاوره</h2><p><a href="tel:+989054188011">۰۹۰۵۴۱۸۸۰۱۱</a></p></article>
+      <article><span>🌿</span><h2>BiBiGol</h2><p>طراوتی کوچک برای لحظه‌های بزرگ</p></article>
+    </section>
+  </main>
+
+  <div class="viewer" id="viewer" aria-hidden="true">
+    <div class="viewer-head">
+      <img src="assets/logo.svg" class="viewer-logo" alt="BiBiGol">
+      <div class="viewer-tools">
+        <a href="catalog.pdf" download>دانلود PDF</a>
+        <button id="fullscreenBtn">تمام‌صفحه</button>
+        <button class="close" id="closeViewer" aria-label="بستن">×</button>
+      </div>
+    </div>
+
+    <div class="book-shell">
+      <button class="nav prev" id="prevBtn" aria-label="صفحه قبل">›</button>
+      <div class="book" id="book">
+        <figure class="page active" data-page="1"><img src="assets/pages/page-01.jpg" alt="صفحه 1 کاتالوگ"></figure><figure class="page" data-page="2"><img src="assets/pages/page-02.jpg" alt="صفحه 2 کاتالوگ"></figure><figure class="page" data-page="3"><img src="assets/pages/page-03.jpg" alt="صفحه 3 کاتالوگ"></figure><figure class="page" data-page="4"><img src="assets/pages/page-04.jpg" alt="صفحه 4 کاتالوگ"></figure>
+      </div>
+      <button class="nav next" id="nextBtn" aria-label="صفحه بعد">‹</button>
+    </div>
+    <div class="counter"><span id="currentPage">۱</span> از <span>4</span></div>
+  </div>
+
+  <footer>
+    <img src="assets/logo.svg" alt="BiBiGol">
+    <p>کرج، چهارباغ | ۰۹۰۵۴۱۸۸۰۱۱</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
